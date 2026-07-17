@@ -1,0 +1,76 @@
+git status:To check any changes in the repo
+git diff:To see the difference of cureent version with lates commit version
+git pull:To fetch the latest file from the repo
+git add :To add the modified file in the staging area
+git commit:To add the changes in the git repo
+git push : To push the commited changes in the remote repo
+git log : To see the old commit history
+
+
+
+
+git config --global user.name ""
+git config --global user.email ""
+git  config --list
+
+git init-- initilazing the working directory
+git status -- check the status of the working directory
+git add filename(*) -- add the file in staging area
+git commit -m "" -- save in the loclal repo
+git log -- check the log of commit
+git show commitid --
+git checkout commitid -- filename(*)
+git checkout master -- *
+git diff
+
+view file from the old commit
+git log
+git show commitid:file_name
+
+* git old version with checkout
+git checkout commitid: -- * or filename
+git checkout master *
+
+* git restore
+git restore file name  -- rollback in working area
+After adding the file in the staging area
+git diff --cached
+git restore filename --staged
+git status
+git restore .
+
+git status
+git add filename
+change somthing in the file and save
+git status
+Now we need to rollback which we added recently in the file
+git restore filename --worktree
+git reset --soft head^
+git reset --hard head^
+
+**************************git logs***********************************
+git log -p -2 - last two commint with diff
+git log --stat -summary of changes
+git log --pretty=online
+git log --pretty=format:"%h-%an,%ar:%s"
+git log -s function
+
+git log --grep="commit message"
+git log --since=""
+git log --untill=""
+git log --author="ranjeet"
+git log --no -merges
+
+********************branch************************************
+git branch
+
+
+*******************************************************reposity*********************************************
+pull an existing repository from the command line
+git remote add origin git@github.com:JhaRanjeet/Mytestrep.git
+git branch -M main
+git push -u origin main
+
+git remote -v
+
+git clone https://github.com/paulgitrepo/myrepo.git
